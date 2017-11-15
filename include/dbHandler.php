@@ -130,6 +130,11 @@ class dbHandler{
 		return $result;
 	}
 
+	public function resetKey($id_user){
+		$result = $this->db->tb_user('id',$id_user)->update(array('api_key'=>''));
+		return ($result == true);
+	}
+
 	private function generateKey(){
 		return md5(uniqid(rand(), true));
 	}
