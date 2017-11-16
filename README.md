@@ -1,2 +1,2 @@
 # api_login
-simple REST API with slim framewok
+simple REST API with slim MicroFramework
